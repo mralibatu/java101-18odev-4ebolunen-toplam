@@ -8,12 +8,13 @@ public class TekSayiToplam {
             System.out.println("Lutfen sayi giriniz : ");
             sayi = input.nextInt();
             if (sayi % 2 !=0){
+                System.out.println("Tek sayi girildi, program durduruldu.");
                 break;
             }
             if (sayi % 2 == 0 && sayi % 4 ==0){
                 toplam += sayi;
             }
         }
-        System.out.println(toplam);
+        System.out.println("Toplam sayiniz : " + toplam);
     }
 }
